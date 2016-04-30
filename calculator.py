@@ -19,6 +19,9 @@ def power(base, exponent):
 def square(num):
 	return num**2
 
+def cube(num):
+	return num**3
+
 print add(4,5)
 print subtract(4,5)
 print multiply(4,5)
