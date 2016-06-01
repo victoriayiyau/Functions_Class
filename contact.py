@@ -7,5 +7,3 @@ class Contact(object):
 		self.work_number = work_number
 		self.email = email
 		self.twitter_handle = twitter_handle
-
-	

@@ -93,7 +93,7 @@ def edit_contact(first_name, last_name):
 					if new_info.strip(" ") == "":
 						print "Invalid input. Please try again."
 					else:
-						contact_list[i].edit_first_name(new_info)
+						contact_list[i].first_name = new_info
 						print "First Name changed to %s." % (new_info)
 				elif edit_menu_selection == "2":
 					#change Last Name
@@ -170,7 +170,7 @@ def main():
 			edit_contact(first_name,last_name)
 		elif menu_selection == "4":
 			#show all contacts
-			print_contact(contact_list)
+			print_contact_list()
 		elif menu_selection == "5":
 			#search contact list
 			search_contact(first_name,last_name)
@@ -180,6 +180,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
-
 
